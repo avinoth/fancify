@@ -6,12 +6,12 @@ require "fancify/version"
 Gem::Specification.new do |spec|
   spec.name          = "fancify"
   spec.version       = Fancify::VERSION
-  spec.authors       = ["manoj-makkuboy"]
+  spec.authors       = ["Manoj Mohan"]
   spec.email         = ["m.manoj@linuxmail.org"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Ruby gem to fancify given word by changing the alphabets in it to numbers and special characters.}
+  # spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.homepage      = "https://github.com/manoj-makkuboy/fancify"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
