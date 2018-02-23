@@ -10,7 +10,10 @@ Gem::Specification.new do |spec|
   spec.email         = ["m.manoj@linuxmail.org"]
 
   spec.summary       = %q{Ruby gem to fancify given word by changing the alphabets in it to numbers and special characters.}
-  # spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.description   = %q{This ruby gem will take a string with alphabets and convert its characters into equally human readable characters. For example:
+    manoj => M@n0j
+    manoj => M/\n*j
+    P.S. The result of the input string will not be certain. Example: 'a' may turn into '/\' or '@' or '4'.}
   spec.homepage      = "https://github.com/manoj-makkuboy/fancify"
   spec.license       = "MIT"
 
