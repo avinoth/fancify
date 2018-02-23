@@ -30,7 +30,7 @@ module Fancify
     ['z', 'Z', '2']
   ]
 
-  def fancify(word_to_fancify)
+  def Fancify.fancify(word_to_fancify)
     fancified_word = ''
     word_to_fancify.each_char { |char|
       char_group_id = get_group_id(char)
@@ -39,7 +39,7 @@ module Fancify
     return fancified_word
   end
 
-  def get_group_id(character)
+  def Fancify.get_group_id(character)
     $groups.each_with_index {|group, key|
       if(group.include?(character))
         return key
@@ -48,7 +48,7 @@ module Fancify
     raise 'Character Not Found'
   end
 
-  def get_random_character(group_id)
+  def Fancify.get_random_character(group_id)
     characters_in_group = $groups[group_id]
     return characters_in_group[rand(characters_in_group.length)]
   end
