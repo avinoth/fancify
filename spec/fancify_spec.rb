@@ -12,8 +12,8 @@ RSpec.describe Fancify do
     expect(Fancify.get_group_id('B')).to eq(1)
   end
 
-  xit "should raise exception if character is unavailable" do
-    expect(Fancify.get_group_id('c')).to raise_error(RuntimeError, 'Character Not Found')
+  it "should raise exception if character is unavailable" do
+    expect {Fancify.get_group_id('8')}.to raise_error(RuntimeError, 'Character Not Found')
   end
 
   it "should return random character from that group" do

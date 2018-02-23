@@ -45,7 +45,7 @@ module Fancify
         return key
       end
       }
-    raise 'Character Not Found'
+    raise  'Character Not Found'
   end
 
   def Fancify.get_random_character(group_id)
